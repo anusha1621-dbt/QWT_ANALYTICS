@@ -30,6 +30,7 @@ vars:
   dq_tools_enable_store_test_results: True
 
 
+
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
@@ -42,8 +43,7 @@ vars:
 seeds: 
    schema: lookup
 
-on-run-start: "use warehouse loading_wh;"
-on-run-end: "alter session set timezone = 'America/Los_Angeles';"
+
 
 models:
   my_new_project:
